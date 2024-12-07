@@ -1,0 +1,399 @@
+/* General */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fija el navbar en la parte superior */
+  top: 0; /* Asegura que esté en la parte superior */
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  padding: 10px 0; /* Opcional: ajusta el espacio alrededor del navbar */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Alinea el logo y el texto verticalmente */
+  gap: 10px; /* Agrega un espacio entre el logo y el texto */
+}
+
+.navbar-brand img {
+  height: 50px; /* Controla el tamaño del logo */
+  width: auto; /* Mantiene la proporción del logo */
+}
+
+.navbar-brand h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Puedes elegir un color que combine con tu tema */
+  margin: 0; /* Elimina cualquier margen predeterminado */
+  letter-spacing: 1px; /* Ajusta el espaciado de las letras */
+}
+
+.navbar-toggler {
+  border: none; /* Elimina el borde por defecto del botón */
+}
+
+.navbar-nav {
+  margin-left: auto; /* Alinea las opciones del menú a la derecha */
+}
+
+.nav-item {
+  margin-left: 20px; /* Espaciado entre los elementos del menú */
+}
+
+.nav-link {
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #e74c3c; /* Cambia el color al pasar el ratón */
+}
+
+
+/* Banner con ajuste de altura */
+.banner {
+  background: url('./1.jpg') no-repeat center center; /* Solo la imagen, sin gradiente */
+  background-size: cover;
+  text-align: center;
+  padding-top: 60px; /* Para que el banner no quede tapado por el navbar */
+  height: calc(100vh - 60px); /* Ocupa toda la pantalla menos el navbar */
+  color: #fff;
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+}
+
+.banner h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+
+/* Componente Nosotros - Después del Banner */
+.nosotros-container {
+  padding: 50px 0;
+  background-color: #fff; /* Fondo blanco */
+  border: 1px solid #000; /* Borde negro */
+  margin: 20px; /* Añadido margen */
+}
+
+.nosotros-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.section {
+  width: 45%;
+}
+
+.section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.section p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Imagen del equipo */
+.nosotros-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Categorías (Barra Desplegable Horizontal) */
+.categories-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff; /* Fondo blanco */
+}
+
+.categories-bar {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 20px;
+}
+
+.category-button {
+  background: #fff; /* Fondo blanco */
+  color: black; /* Texto en color negro */
+  border: 1px solid #000; /* Borde negro */
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.category-button:hover {
+  background-color: #f1f1f1; /* Color gris claro al pasar el ratón */
+}
+
+/* Títulos de Secciones */
+.section-title {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #e74c3c;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+
+/* Estilos de las Cards */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Contenido de la tarjeta (imagen) */
+.content_1card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #f1f1f1;
+}
+
+/* Contenido de la tarjeta (texto) */
+.content_2card {
+  padding: 15px;
+  color: #333;
+}
+
+.content_2card h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content_2card small {
+  font-size: 14px;
+  color: #777;
+}
+
+.content_2card p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Botones Generales */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e74c3c;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+/* Nuevo Footer */
+.footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 30px 0;
+}
+
+.footer .footer-links,
+.footer .footer-contact {
+  margin-bottom: 20px;
+}
+
+.footer .footer-links a,
+.footer .footer-contact a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.footer .footer-contact a {
+  font-weight: bold;
+}
+
+.footer .newsletter input[type="email"] {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.footer .newsletter button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e74c3c;
+  color: white;
+}
+
+.footer .social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+/* Footer Colors */
+:root {
+  --color-footer: #151515;
+}
+
+footer {
+  background: var(--color-footer);
+  padding: 80px 0px;
+  color: #E3E3E3;
+}
+
+footer .foo-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .foo-col {
+  width: 23%;
+  margin-bottom: 20px;
+}
+
+footer .foo-col h3, footer .foo-col h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+footer .foo-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .foo-col ul li {
+  margin-bottom: 10px;
+}
+
+footer .foo-col ul li a {
+  color: #E3E3E3;
+  text-decoration: none;
+}
+
+footer .foo-col ul li a:hover {
+  color: rgb(255, 67, 67);
+}
+
+footer .social-media {
+  display: flex;
+}
+
+footer .social-media li {
+  margin-right: 15px;
+}
+
+footer .social-media a {
+  color: #E3E3E3;
+  font-size: 20px;
+}
+
+.foo-copy {
+  background: #000000;
+  padding: 20px 0px;
+  text-align: center;
+  color: #E3E3E3;
+  font-size: 14px;
+}
+
+
+/* Estilos Responsivos */
+@media (max-width: 767px) {
+  .navbar {
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 28px;
+  }
+
+  .footer .footer-links {
+    text-align: center;
+  }
+}
+
+
+/* Paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Añadir margen inferior */
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.pagination a:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.pagination .active {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.pagination .disabled {
+  background-color: #f1f1f1;
+  color: #ccc;
+}
+.modal-body p{
+  font-size: 20px;
+  color: #000;
+  font-family: 'Times New Roman', Times, serif;
+}
+.modal-body h3{
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
